@@ -12,7 +12,7 @@
 
 ## Feito por:
 
-### Joana Santos
+### Guilherme Cabral
 
 ### Linkedin: https://www.linkedin.com/in/guilhermecabralmm/
 
