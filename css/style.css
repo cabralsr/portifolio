@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap');
 
 :root {
-    --cor--primaria: #DAC0A3;
+    --cor--primaria: #000000;
     --cor--secundaria: #FEFAF6;
-    --cor--terciaria: #102C57;
-    --cor--hover: #EADBC8;
+    --cor--terciaria: #6a0a0a;
+    --cor--hover: #5b2626;
 
     --fonte-principal: "Parkinsans", sans-serif;
     --fonte-secundaria: "Montserrat", serif;
@@ -38,12 +38,16 @@ body {
  color: var(--cor--terciaria);
 }
 
+.menu_link:hover{
+    color: var(--cor--secundaria);
+}
+
 .destaque {
     color: var(--cor--terciaria);
 }
 
 .apresent {
-    padding: 2% 10%;
+    padding: 2% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,8 +57,8 @@ body {
 .conteudo {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 50%;
+    gap: 10px;
+    width: 48%;
 }
 
 .title {
@@ -107,9 +111,9 @@ body {
     font-size: 1.5rem;
 }
 
-.perfil {
-    width: 50%;
-    border: 4px solid var(--cor--secundaria);
+.foto {
+    width: 45%;
+    border: 4px solid var(--cor--terciaria);
     border-radius: 15px;
 }
 
@@ -117,11 +121,19 @@ body {
     font-family: var(--fonte-principal);
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     padding: 1.5rem;
     background-color: var(--cor--terciaria);
-    color: var(--cor--primaria);
+    color: var(--cor--secundaria);
     text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 50px;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -134,6 +146,16 @@ body {
         width: auto;
     }
 
+    .title {
+        text-align: center;
+    }
+
+    .gallery{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .cabecalho {
         padding: 10%;
     }
@@ -142,7 +164,7 @@ body {
         justify-content: center;
     }
 
-    .perfil {
+    .foto {
         width: 100%;
     }
 }
