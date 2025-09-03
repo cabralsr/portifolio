@@ -65,6 +65,7 @@ body {
 .title {
     font-family:var(--fonte-principal);
     font-size: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .paragrafo {
